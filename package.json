@@ -1,25 +1,36 @@
 {
-  "name": "boiler-plate",
+  "name": "react-boiler-plate",
   "version": "1.0.0",
-  "description": "",
+  "description": "react boiler plate",
   "main": "index.js",
-  "scripts": {
-    "start": "node ./server/index.js",
-    "backend": "nodemon ./server/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "concurrently \"npm run backend\" \"npm run start --prefix client\" "
+  "engine": {
+    "node": "10.16.0",
+    "npm": "6.9.0"
   },
-  "author": "minsoo",
+  "scripts": {
+    "start": "node server/index.js",
+    "backend": "nodemon server/index.js",
+    "frontend": "npm run start --prefix client",
+    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
+  },
+  "author": "John ahn",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
-    "body-parser": "^1.19.0",
-    "cookie-parser": "^1.4.5",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.13.7"
+    "moment": "^2.24.0",
+    "mongoose": "^5.4.20",
+    "react-redux": "^5.0.7",
+    "saslprep": "^1.0.3",
+    "supports-color": "^7.1.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.19.1"
   }
 }

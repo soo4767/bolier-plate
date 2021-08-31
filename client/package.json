@@ -3,20 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^12.0.0",
-    "@testing-library/user-event": "^13.2.1",
+    "@ant-design/icons": "^4.6.4",
     "antd": "^4.16.13",
     "axios": "^0.21.1",
-    "http-proxy-middleware": "^2.0.1",
+    "core-js": "^3.6.4",
+    "formik": "^2.2.9",
     "react": "^17.0.2",
+    "react-app-polyfill": "^1.0.6",
     "react-dom": "^17.0.2",
+    "react-icons": "^3.7.0",
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "redux": "^4.1.1",
     "redux-promise": "^0.6.0",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "yup": "^0.27.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -25,10 +27,7 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [
@@ -43,6 +42,6 @@
     ]
   },
   "devDependencies": {
-    "web-vitals": "^2.1.0"
+    "http-proxy-middleware": "^1.0.3"
   }
 }
